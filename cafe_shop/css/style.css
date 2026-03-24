@@ -69,18 +69,33 @@ body {
 }
 /* Fin header*/
 .cafes__unidad {
-    margin-left: 5rem;
+    margin: 0;
+    text-align: center;
 }
-.cafes__unidad:nth-child(1) {
-    margin-left: 0;
+@media (min-width: 768px) {
+    .cafes__unidad {
+        margin-left: 5rem;
+    }
+    .cafes__unidad:nth-child(1) {
+        margin-left: 0;
+    }
+    
 }
 .cafes {
     background-color: #C9B194;
     padding: 5rem;
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 2rem;
+    flex-direction: column;
 }
 .cafe {
     width: 10rem;
+}
+@media (min-width: 768px) {
+    .cafes {
+        flex-direction: row;
+
+    }
 }
