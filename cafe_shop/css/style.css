@@ -1,0 +1,86 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+/* apply a natural box layout model to all elements, but allowing components to change */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.hero {
+    background-image: url('../img/image.jpg');
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 2rem 0;
+}
+.hero:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+}
+.navegacion a {
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.content {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+}
+.text {
+    padding: 0 5rem;
+}
+.text p{
+    font-size: 3rem;
+}
+.text h1{
+    font-size: 3.8rem;
+}
+.enlace {
+    color: #000;
+    background-color: #fff;
+    transition: background-color 800ms;
+    text-decoration: none;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    display: inline-block;
+}
+.enlace:hover {
+    background-color: #C9B194;
+}
+/* Fin header*/
+.cafes__unidad {
+    margin-left: 5rem;
+}
+.cafes__unidad:nth-child(1) {
+    margin-left: 0;
+}
+.cafes {
+    background-color: #C9B194;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.cafe {
+    width: 10rem;
+}
