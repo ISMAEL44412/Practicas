@@ -1,120 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coffe Shop Landing Page</title>
-    <!-- Link de Iconos -->
-    <!-- Icono de buscador y de Corazon-->
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
-    />
-
-    <!-- Icono cafe vaso -->
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css"
-    />
-
-    <!-- Cafe taza -->
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
-    />
-
-    <!-- Café Grande-->
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css"
-    />
-
-    <!-- Pastel -->
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
-    />
-
-    <!-- Flecha -->
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css"
-    />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#">COFFEE</a>
-        <div>
-          <a href="#">Home</a>
-          <a href="#">Coffee</a>
-          <a href="#">Balery</a>
-          <a href="#">Shop</a>
-          <a href="#">About</a>
-          <a href="#">Login</a>
-        </div>
-        <a href="#"><i class="fi fi-rr-search"></i></a>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop</title>
+  <link rel="icon" type="image/x-icon" href="/img/coffee-cups.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header hero">
+      <nav class="navegacion" aria-label="Menú principal">
+        <a href="index.html">Home</a>
+        <a href="bakery.html">Bakery</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Login</a>
       </nav>
-      <h2>Welcome!</h2>
-      <h1>We serve the richest coffee in the city!</h1>
+      <div class="content">
+        <article class="text">
+          <p>Welcome!</p>
+          <h1>We serve the richest coffee in the city!</h1>
+          <a class="enlace" href="#">Order Now</a>
+        </article>
+      </div>
     </header>
     <main>
-      <section>
-        <a href="#"><i class="fi fi-sr-mug-hot-alt"></i></a>
-        <a href="#"><i class="fi fi-ss-coffee"></i></a>
-        <a href="#"><i class="fi fi-tr-coffee-pot"></i></a>
-        <a href="#"><i class="fi fi-rs-custard"></i></a>
-      </section>
-      <section>
-        <article>
-          <h2>Our special Coffe</h2>
-          <div class="x-4">
-            <div class="carta">
-              <div class="imagen">
-                <img src="./layout.jpg" alt="" width="60" height="80" />
-                <i class="fi fi-rr-heart"></i>
-              </div>
-              <div class="info">
-                <h3>Lungo Coffee</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <div class="info__precio">
-                  <p>Rs.199</p>
-                  <a href="#"><strong>Order Now</strong></a>
-                </div>
-              </div>
-            </div>
-          </div>
+      <section class="cafes">
+        <article class="cafes__unidad">
+          <img class="cafe" src="img/cafe-1.png" alt="Cafe caliente">
+          <p>Hot coffee</p>
         </article>
-        <article>
-          <h2>Our special Dessert</h2>
-          <div class="x-4">
-            <div class="carta">
-              <div class="imagen">
-                <img src="./layout.jpg" alt="" width="60" height="80" />
-                <i class="fi fi-rr-heart"></i>
-              </div>
-              <div class="info">
-                <h3>Lungo Coffee</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <div class="info__precio">
-                  <p>Rs.199</p>
-                  <a href="#"><strong>Order Now</strong></a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <article class="cafes__unidad">
+          <img class="cafe" src="img/cafe-2.png" alt="Cafe batido">
+          <p>Coki coffee</p>
+        </article>
+        <article class="cafes__unidad">
+          <img class="cafe" src="img/bebida-fria.png" alt="Cafe chico">
+          <p>Cup coffee</p>
+        </article>
+        <article class="cafes__unidad">
+          <img class="cafe" src="img/pastel-de-manzana.png" alt="Pastel">
+          <p>Dessert</p>
         </article>
       </section>
-      <section>
-        <h2>Check out our best coffee betans</h2>
-        <a href="#"
-          >Explore our products <i class="fi fi-ss-angle-circle-right"></i>
-        </a>
-      </section>
-      <section>
-        <h3>Come and join</h3>
-        <h2>Our Happy Customers</h2>
-      </section>
+      <h2>Our special coffe</h2>
     </main>
-  </body>
+</body>
 </html>
