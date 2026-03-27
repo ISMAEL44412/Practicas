@@ -88,19 +88,21 @@ body {
 .cafes {
     background-color: #FFB26F;
     padding: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+
 }
 .cafe {
     width: 10rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 481px) {
     .cafes {
-        flex-direction: row;
-
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 781px) {
+    .cafes {
+        grid-template-columns: repeat(4,1fr);
     }
 }
 
@@ -118,9 +120,19 @@ h2 {
 }
 .articulos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     gap: 2rem;
     margin-bottom: 5rem;
+}
+@media (min-width: 481px) {
+    .articulos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 781px) {
+    .articulos {
+        grid-template-columns: repeat(4,1fr);
+    }
 }
 .articulo {
     padding: 1rem;
