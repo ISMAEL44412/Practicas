@@ -110,19 +110,23 @@ h2 {
 /* Seccion de Articulos */
 .articulos {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
-    max-width: 130rem;
-    margin: 0 auto;
-}
-.articulo {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
 }
 
+@media (min-width: 768px) {
+    .articulos {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .articulos {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+}
 .producto {
     width: 30rem;
     height: 35rem;
-    margin: 0 0 2rem 0;
 }
