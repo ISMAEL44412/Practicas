@@ -38,6 +38,9 @@ body {
     text-transform: uppercase;
     text-decoration: none;
 }
+.navegacion a:hover {
+    color: #F0BB78;
+}
 .content {
     position: absolute;
     height: 100%;
@@ -58,14 +61,15 @@ body {
 .enlace {
     color: #000;
     background-color: #fff;
-    transition: background-color 800ms;
+    transition: background-color 800ms, font-weight 600ms;
     text-decoration: none;
     padding: 1.5rem;
     border-radius: 3rem;
     display: inline-block;
 }
 .enlace:hover {
-    background-color: #C9B194;
+    background-color: #F0BB78;
+    font-weight: bold;
 }
 /* Fin header*/
 .cafes__unidad {
@@ -82,7 +86,7 @@ body {
     
 }
 .cafes {
-    background-color: #C9B194;
+    background-color: #FFB26F;
     padding: 5rem;
     display: flex;
     align-items: center;
@@ -108,25 +112,67 @@ h2 {
 }
 
 /* Seccion de Articulos */
+.container {
+    max-width: 135rem;
+    margin: 0 auto;
+}
 .articulos {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+.articulo {
+    padding: 1rem;
+    background-color: #fff7e8;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 500ms, background-color 500ms;
+}
+.articulo:hover {
+    transform: translateY(-1rem);
+    background-color: #F0BB78;
 }
 
-@media (min-width: 768px) {
-    .articulos {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-@media (min-width: 1024px) {
-    .articulos {
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-    }
-}
 .producto {
-    width: 30rem;
+    width: 100%;
     height: 35rem;
+    object-fit: cover;
+    border-radius: 0.7rem;
+    display: block;
+}
+.articulo__texto {
+    padding: 1rem;
+}
+.articulo__texto h3 {
+    font-size: 2.2rem;
+    margin: .5rem 0;
+}
+.articulo__texto p {
+    font-size: 1.3rem;
+}
+.articulo__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.articulo__info span {
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+.articulo__info a {
+    color: #fff;
+    background-color: #000;
+    transition: background-color 800ms, transform 500ms;
+    text-decoration: none;
+    padding: 1.2rem 1.5rem;
+    border-radius: 1rem;
+    display: inline-block;
+}
+
+.articulo__info a:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transform:  scale(1);
 }
