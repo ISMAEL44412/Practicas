@@ -11,7 +11,7 @@ body {
     box-sizing: inherit;
 }
 .hero {
-    background-image: url('../img/image.jpg');
+    background-image: url('../img/imagen1.jpg');
     height: 100vh;
     background-position: center center;
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0, 0.6);
 }
 .navegacion {
     display: flex;
