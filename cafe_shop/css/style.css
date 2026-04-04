@@ -63,8 +63,9 @@ body {
     background-color: #fff;
     transition: background-color 800ms, font-weight 600ms;
     text-decoration: none;
-    padding: 1.5rem;
-    border-radius: 3rem;
+    font-size: 2rem;
+    padding: 1.5rem 3rem;
+    border-radius: 2rem;
     display: inline-block;
 }
 .enlace:hover {
