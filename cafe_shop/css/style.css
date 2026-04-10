@@ -11,7 +11,7 @@ body {
     box-sizing: inherit;
 }
 .hero {
-    background-image: url('../img/imagen1.jpg');
+    background-image: url('../img/imagen1.webp');
     height: 100vh;
     background-position: center center;
     background-repeat: no-repeat;
@@ -214,8 +214,12 @@ h2 {
         width: 100%;
     }
 }
+.explorar_productos__info {
+    display: flex;
+    flex-direction: column;
+}
 .explorar_productos__info h3 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: center;
 }
 @media (min-width: 781px) {
@@ -225,11 +229,25 @@ h2 {
     }
 }
 .explorar_productos__info a {
-    text-align: center;
+    align-self: center;
     background-color: #FFB26F;
 }
 @media (min-width: 781px) {
     .explorar_productos__info a {
-        align-self: flex-end;
+        align-self: flex-start;
     }
+}
+.comentarios {
+    text-align: center;
+}
+.comentarios_titulo {
+    font-size: 2rem;
+    font-family: "Playwrite IE", cursive;
+    text-transform: none;
+}
+
+.comentarios_texto {
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
 }
