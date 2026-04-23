@@ -189,17 +189,30 @@ h2 {
     border: 1px solid #000;
     transform:  scale(1);
 }
+.todos-productos {
+    display: flex;
+    justify-content: end;
+}
 .all {
     background-color: #FFB26F;
+    margin: 0 3rem;
 }
 
 footer {
     margin-top: 4rem;
     padding: 2rem;
-    height: 20rem;
+    height: 40rem;
     background-color: #4B2E2B;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    footer {
+        display: flex;
+        justify-content: space-around;
+        height: 20rem;
+    }
 }
 
 .footer__caja {
@@ -209,13 +222,30 @@ footer {
     text-transform: uppercase;
 }
 
-.footer__caja nav {
+.navegacion-footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     gap: 3rem;
+    justify-content: center;
 }
 
-.footer__caja nav a {
+.navegacion-footer a {
     color: #fff;
     text-decoration: none;
+}
+.navegacion-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navegacion-footer a:hover {
+    color: #FFB26F;
+    text-decoration: none;
+}
+.redes {
+    flex-direction: row;
+
+}
+.red-social {
+    height: 3rem;
 }
