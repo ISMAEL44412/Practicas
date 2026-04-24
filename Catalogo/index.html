@@ -1,95 +1,112 @@
 <!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Mi Catalogo</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    </head>
-    <body>
-       <div class="container">
-  <h1 class="text-center m-5">Mi Catalogo</h1>
 
-  <div id="carouselExample" class="carousel slide">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Catalogo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
 
-    <div class="carousel-inner">
+  <!-- Styles-->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Icono-->
+  <link rel="icon" type="image/x-icon" href="/img/flor.png">
 
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="row">
-          <div class="col-4">
-            <img src="img/rojo1.jpg" class="d-block w-100">
+</head>
+
+<body>
+  <nav>
+    <a href="#">Destacado</a>
+    <a href="#">Catalogo</a>
+  </nav>
+  <header>
+    <div class="container">
+      <h2 class="text-center m-5 ">Mis trabajos destacados</h2>
+
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-4 ">
+                <img src="img/rojo1.jpg" class="imagen-carrusel">
+              </div>
+              <div class="col-4">
+                <img src="img/rojo2.jpg" class="imagen-carrusel">
+              </div>
+              <div class="col-4">
+                <img src="img/rojo3.jpg" class="imagen-carrusel">
+              </div>
+            </div>
           </div>
-          <div class="col-4">
-            <img src="img/rojo2.jpg" class="d-block w-100">
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/azul1.jpg" class="imagen-carrusel">
+              </div>
+              <div class="col-4">
+                <img src="img/azul2.jpg" class="imagen-carrusel">
+              </div>
+              <div class="col-4">
+                <img src="img/azul3.jpg" class="imagen-carrusel">
+              </div>
+            </div>
           </div>
-          <div class="col-4">
-            <img src="img/rojo3.jpg" class="d-block w-100">
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/amarillo1.jpg" class="imagen-carrusel">
+              </div>
+              <div class="col-4">
+                <img src="img/amarillo2.jpg" class="imagen-carrusel">
+              </div>
+              <div class="col-4">
+                <img src="img/amarillo3.jpg" class="imagen-carrusel">
+              </div>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/boca1.jpg" class="imagen-carrusel">
+              </div>
+              <div class="col-4">
+                <img src="img/boca2.jpg" class="imagen-carrusel">
+              </div>
+              <div class="col-4">
+                <img src="img/boca4.jpg" class="imagen-carrusel">
+              </div>
+            </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-4">
-            <img src="img/azul1.jpg" class="d-block w-100">
-          </div>
-          <div class="col-4">
-            <img src="img/azul2.jpg" class="d-block w-100">
-          </div>
-          <div class="col-4">
-            <img src="img/azul3.jpg" class="d-block w-100">
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-4">
-            <img src="img/amarillo1.jpg" class="d-block w-100">
-          </div>
-          <div class="col-4">
-            <img src="img/amarillo2.jpg" class="d-block w-100">
-          </div>
-          <div class="col-4">
-            <img src="img/amarillo3.jpg" class="d-block w-100">
-          </div>
-        </div>
-      </div>
-       <!-- Slide 4 -->
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-4">
-            <img src="img/boca1.jpg" class="d-block w-100">
-          </div>
-          <div class="col-4">
-            <img src="img/boca2.jpg" class="d-block w-100">
-          </div>
-          <div class="col-4">
-            <img src="img/boca4.jpg" class="d-block w-100">
-          </div>
-        </div>
-      </div>
-
     </div>
+  </header>
+  <main>
+    <h1>Catalogo Completo</h1>
+    
+  </main>
 
-    <!-- Controles (IMPORTANTE: adentro) -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
 
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-
-  </div>
-</div>
-
-  </div>
-</div>
-        <!-- Fin Carrusel-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    </body>
 </html>

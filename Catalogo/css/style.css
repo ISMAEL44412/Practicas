@@ -1,0 +1,93 @@
+:root {
+  /*
+  Paleta morada:
+
+  --moradoOscuro: #462C7D;
+  -- moradoMedio: #831C91;
+  --moradoClaro: #D552A3;
+  --rosa: #FF70BF;
+
+  Paleta Rosada: 
+  --rosaOscuro: #F13E93;
+  --rosaClaro: #F891BB;
+  --rosaPastel: F9D0CD;
+  --rosaBlanco: #FAFFCB
+  */
+
+  /* Paleta Morada */
+  --moradoOscuro: #462c7d;
+  --moradoMedio: #831c91;
+  --moradoClaro: #d552a3;
+
+  /* Paleta Rosada */
+  --rosaOscuro: #f13e93;
+  --rosaClaro: #f891bb;
+  --rosaPastel: #f9d0cd;
+  --rosaBlanco: #faffcb;
+
+  /* Neutros */
+  --blanco: #ffffff;
+  --negro: #000;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background: linear-gradient(
+    90deg,
+    var(--moradoMedio) 0%,
+    var(--moradoClaro) 25%,
+    var(--rosaOscuro) 50%,
+    var(--rosaClaro) 75%,
+    var(--rosaPastel) 100%
+  );
+  background-size: 300% 300%;
+  animation: moverFondo 8s ease infinite;
+}
+
+@keyframes moverFondo {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.imagen-carrusel {
+  width: 100%;
+  height: 30rem;
+  border-radius: 1rem;
+}
+@media (min-width: 768px) {
+  .imagen-carrusel {
+    width: 100%;
+    height: 50rem;
+  }
+}
+
+.container h2 {
+  font-size: 3.4rem;
+}
+h1 {
+  font-size: 4rem;
+  margin: 3rem 0;
+  text-align: center;
+}
+.container h2,
+h1 {
+  color: var(--blanco);
+  font-family: "Bungee Shade", sans-serif;
+}
