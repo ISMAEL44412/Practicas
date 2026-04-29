@@ -11,7 +11,7 @@ body {
     box-sizing: inherit;
 }
 .hero {
-    background-image: url('../img/imagen1.webp');
+    background-image: url('../webp/imagen1.webp');
     height: 100vh;
     background-position: center center;
     background-repeat: no-repeat;
@@ -211,6 +211,7 @@ footer {
     footer {
         display: flex;
         justify-content: space-around;
+        align-items: flex-start;
         height: 20rem;
     }
 }
